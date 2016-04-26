@@ -47,7 +47,7 @@ run pip install -r /home/docker/code/app/requirements.txt
 
 # install django, normally you would remove this step because your project would already
 # be installed in the code/app/ directory
-run django-admin.py startproject website /home/docker/code/app/ 
+# run django-admin.py startproject website /home/docker/code/app/ 
 
-expose 80
+expose 8001
 cmd ["supervisord", "-n"]
